@@ -1,0 +1,9 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    p {
+        margin: 50px;
+        color: white;
+    }
+}

@@ -1,0 +1,84 @@
+body {
+
+    .navigation {
+        background-color: #cc8dcc;
+        border-bottom: .5px solid pink;
+       padding: 20px 0;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    opacity: 50%;
+                }
+                a:hover {
+                    color: pink;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(/assets/stacked-steps-haikei.png);
+            background-size: cover;
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: pink;
+                z-index: 1;
+                h1 {
+                    margin: 0;
+                    text-align: center;
+                }
+
+                h2 {
+                    font-family: 'Sacramento', cursive;
+                    font-size: 95px;
+                }
+                h3 {
+                    margin: 0;
+                    color: white;
+                }
+                a {
+                    text-decoration: none;
+                    padding: 5px 15px;
+                    background-color: #cc8dcc;
+                    color: pink;    
+                    border: 1px solid pink;  
+                    position: relative;    
+                    top: 140px;          
+                }
+                a:hover {
+                    background-color: #d87093;
+                    text-transform: uppercase;
+                }
+            }
+
+            .outer {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+
+                background: rgba(0,0,0,0.5);
+                z-index: 0;
+            }
+        } 
+    }   
+}
+
+

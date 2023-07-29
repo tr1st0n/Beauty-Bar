@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: palevioletred;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Nunito", sans-serif;
+}
+
+p, li, button, label, a {
+  font-family: "Maitree", serif;
+  font-size: 20px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/assets/stacked-steps-haikei.png);
+  background-size: cover;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0;
+}
+.contact-container .socials {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 10px #000000;
+          box-shadow: 5px 10px #000000;
+  border: 1px solid black;
+  background-color: pink;
+  margin: 50px;
+}
+.contact-container .message {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 5px 10px #000000;
+          box-shadow: 5px 10px #000000;
+  border: 1px solid black;
+  background-color: pink;
+  margin: 50px;
+  padding: 50px 20px;
+}
+.contact-container .message h2 {
+  text-align: center;
+}
+.contact-container .message p {
+  text-align: center;
+}
+.contact-container .message form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+.contact-container .message form .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-container .message form .info input {
+  width: 48%;
+  font-family: "Maitree", serif;
+}
+.contact-container .message form .message-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-container .message form .message-box label {
+  padding: 0 10px;
+  margin-top: 20px;
+  color: white;
+}
+.contact-container .message form .message-box textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 200px;
+  padding: 0px 0px;
+}
+.contact-container .message form .message-box button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.copyright {
+  background-color: #cc8dcc;
+  padding: 10px 0;
+  border-top: 1px solid white;
+}
+.copyright p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.gallery-container .gallery-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+.gallery-container .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gallery-container .gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gallery-container .gallery ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 33%;
+  margin-bottom: 50px;
+}
+.gallery-container .gallery ul li img {
+  width: 80%;
+  -webkit-box-shadow: 5px 8px 10px rgb(0, 0, 0);
+          box-shadow: 5px 8px 10px rgb(0, 0, 0);
+}
+.gallery-container .gallery-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.gallery-container .gallery-links a {
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #cc8dcc;
+  color: pink;
+  border: 1px solid pink;
+  position: relative;
+}
+.gallery-container .gallery-links a:hover {
+  background-color: #d87093;
+  text-transform: uppercase;
+}
+
+body .navigation {
+  background-color: #cc8dcc;
+  border-bottom: 0.5px solid pink;
+  padding: 20px 0;
+}
+body .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body .navigation ul li a {
+  text-decoration: none;
+  color: white;
+  opacity: 50%;
+}
+body .navigation ul li a:hover {
+  color: pink;
+  font-weight: bold;
+}
+body header {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(/assets/stacked-steps-haikei.png);
+  background-size: cover;
+}
+body header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body header .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: pink;
+  z-index: 1;
+}
+body header .container .title h1 {
+  margin: 0;
+  text-align: center;
+}
+body header .container .title h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 95px;
+}
+body header .container .title h3 {
+  margin: 0;
+  color: white;
+}
+body header .container .title a {
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #cc8dcc;
+  color: pink;
+  border: 1px solid pink;
+  position: relative;
+  top: 140px;
+}
+body header .container .title a:hover {
+  background-color: #d87093;
+  text-transform: uppercase;
+}
+body header .container .outer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.location-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.location-container .hours {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: center;
+  width: 50%;
+  border: 1px solid black;
+  background-color: pink;
+  padding: 20px;
+}
+.location-container .hours h2 {
+  margin: 10px 0;
+}
+.location-container .hours p {
+  margin: 20px 0;
+  color: white;
+}
+.location-container .map {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 50%;
+}
+.location-container .map iframe {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+#services .service-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#services .service-container .service-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  background-color: pink;
+  border-right: none;
+  padding: 30px 0;
+}
+#services .service-container .service-text p {
+  color: white;
+  text-align: center;
+  margin: 0 60px;
+}
+#services .service-container .service-text a {
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #cc8dcc;
+  color: pink;
+  border: 1px solid white;
+  position: relative;
+}
+#services .service-container .service-text a:hover {
+  background-color: #d87093;
+  text-transform: uppercase;
+}
+#services .service-container .service-image {
+  width: 50%;
+}
+#services .service-container .service-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid black;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.about-container p {
+  margin: 50px;
+  color: white;
+}
