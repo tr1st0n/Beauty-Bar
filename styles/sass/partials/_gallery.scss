@@ -6,6 +6,11 @@
         justify-content: center;
         margin-bottom: 50px;
     }
+    .gallery-title:hover {
+        stroke-width: 2px;
+        color: pink;
+        -webkit-text-stroke-color: black; 
+    }
     .gallery {
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +27,9 @@
                     width: 80%;
                     box-shadow: 5px 8px 10px rgb(0, 0, 0);
                 }
+                img:hover {
+                    opacity: 90%;
+                }
             }
         }
     }
@@ -32,7 +40,7 @@
             text-decoration: none;
             padding: 5px 15px;
             background-color: #cc8dcc;
-            color: pink;    
+            color: white;    
             border: 1px solid pink;  
             position: relative;             
             }

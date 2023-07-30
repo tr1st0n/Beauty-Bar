@@ -3,7 +3,7 @@ body {
     .navigation {
         background-color: #cc8dcc;
         border-bottom: .5px solid pink;
-       padding: 20px 0;
+        padding: 20px 0;
         ul {
             display: flex;
             justify-content: space-around;
@@ -12,11 +12,12 @@ body {
                 a {
                     text-decoration: none;
                     color: white;
-                    opacity: 50%;
+                    
                 }
                 a:hover {
                     color: pink;
                     font-weight: bold;
+                    
                 }
             }
         }
@@ -44,6 +45,7 @@ body {
                 h1 {
                     margin: 0;
                     text-align: center;
+                    color: white;
                 }
 
                 h2 {
@@ -61,7 +63,7 @@ body {
                     text-decoration: none;
                     padding: 5px 15px;
                     background-color: #cc8dcc;
-                    color: pink;    
+                    color: white;    
                     border: 1px solid pink;  
                     position: relative;    
                     top: 140px;          
