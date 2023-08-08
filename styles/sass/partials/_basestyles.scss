@@ -7,12 +7,12 @@
 html {
     margin: 0;
     padding: 0;
-    background-color: palevioletred;
+    background-color: white;
 }
 
-section {
-    margin-bottom: 70px;
-}
+// section {
+//     padding: 40px 0;
+// }
 
 ul {
     list-style: none;
@@ -24,10 +24,17 @@ img {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Nunito', sans-serif;
+    font-family: Neon;
+    font-size: 30px;
 }
 
 p, li, button, label, a {
     font-family: 'Maitree', serif;
     font-size: 20px;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Neon;
+    src: url(NeonSans.otf);
 }

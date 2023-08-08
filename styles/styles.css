@@ -7,11 +7,7 @@
 html {
   margin: 0;
   padding: 0;
-  background-color: palevioletred;
-}
-
-section {
-  margin-bottom: 70px;
+  background-color: white;
 }
 
 ul {
@@ -24,19 +20,25 @@ img {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Nunito", sans-serif;
+  font-family: Neon;
+  font-size: 30px;
 }
 
 p, li, button, label, a {
   font-family: "Maitree", serif;
   font-size: 20px;
+  font-weight: bolder;
 }
 
+@font-face {
+  font-family: Neon;
+  src: url(NeonSans.otf);
+}
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/assets/stacked-steps-haikei.png);
+  background-image: url(/assets/blurry-gradient-haikei2.png);
   background-attachment: fixed;
   background-size: cover;
   -ms-flex-pack: distribute;
@@ -152,9 +154,9 @@ p, li, button, label, a {
 }
 
 .copyright {
-  background-color: #d87093;
+  background-color: pink;
   padding: 10px 0;
-  border-top: 1px solid pink;
+  border-top: 1px solid white;
 }
 .copyright p {
   display: -webkit-box;
@@ -166,7 +168,7 @@ p, li, button, label, a {
   font-weight: bold;
   font-style: italic;
   font-size: 15px;
-  color: pink;
+  color: white;
 }
 
 .gallery-container {
@@ -177,6 +179,9 @@ p, li, button, label, a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-image: url(/assets/brickwall.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .gallery-container .gallery-title {
   display: -webkit-box;
@@ -185,7 +190,7 @@ p, li, button, label, a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin: 70px 0;
 }
 .gallery-container .gallery-title:hover {
   stroke-width: 2px;
@@ -198,6 +203,7 @@ p, li, button, label, a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 30px 0;
 }
 .gallery-container .gallery ul {
   display: -webkit-box;
@@ -218,8 +224,8 @@ p, li, button, label, a {
 }
 .gallery-container .gallery ul li img {
   width: 80%;
-  -webkit-box-shadow: 5px 8px 10px rgb(0, 0, 0);
-          box-shadow: 5px 8px 10px rgb(0, 0, 0);
+  -webkit-box-shadow: 5px 8px 10px white;
+          box-shadow: 5px 8px 10px white;
 }
 .gallery-container .gallery ul li img:hover {
   opacity: 90%;
@@ -230,12 +236,13 @@ p, li, button, label, a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 70px 0;
 }
 .gallery-container .gallery-links a {
   text-decoration: none;
   padding: 5px 15px;
-  background-color: #cc8dcc;
-  color: white;
+  background-color: white;
+  color: pink;
   border: 1px solid pink;
   position: relative;
 }
@@ -245,8 +252,9 @@ p, li, button, label, a {
 }
 
 body .navigation {
-  background-color: #cc8dcc;
-  border-bottom: 0.5px solid pink;
+  background-image: url(/assets/blurry-gradient-haikei2.png);
+  background-size: cover;
+  border-bottom: 0.5px solid white;
   padding: 20px 0;
 }
 body .navigation ul {
@@ -279,7 +287,7 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/assets/stacked-steps-haikei.png);
+  background-image: url(/assets/brickwall.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -313,13 +321,24 @@ body header .container .title h1 {
   margin: 0;
   text-align: center;
   color: white;
+  font-family: Neon;
+}
+body header .container .title img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body header .container .title h2 {
-  font-family: "Sacramento", cursive;
-  font-size: 95px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: pink;
-  color: transparent;
+  font-family: Titles;
+  font-size: 198px;
+  color: white;
+  font-weight: lighter;
 }
 body header .container .title h3 {
   margin: 0;
@@ -328,11 +347,9 @@ body header .container .title h3 {
 body header .container .title a {
   text-decoration: none;
   padding: 5px 15px;
-  background-color: #cc8dcc;
-  color: white;
+  background-color: white;
+  color: pink;
   border: 1px solid pink;
-  position: relative;
-  top: 140px;
 }
 body header .container .title a:hover {
   background-color: #d87093;
@@ -361,15 +378,19 @@ body header .container .outer {
   text-align: center;
   width: 50%;
   border: 1px solid black;
-  background-color: pink;
+  background-image: url(/assets/blurry-gradient-haikei2.png);
   padding: 20px;
 }
 .location-container .hours h2 {
   margin: 10px 0;
+  color: white;
 }
 .location-container .hours p {
   margin: 20px 0;
   color: white;
+  font-family: Bold;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 .location-container .map {
   -webkit-box-ordinal-group: 2;
@@ -403,9 +424,10 @@ body header .container .outer {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
-  background-color: pink;
+  background-image: url(/assets/blurry-gradient-haikei2.png);
   border-right: none;
   padding: 30px 0;
+  color: white;
 }
 #services .service-container .service-text .service-title:hover {
   stroke-width: 2px;
@@ -416,6 +438,9 @@ body header .container .outer {
   color: white;
   text-align: center;
   margin: 0 60px;
+  font-family: Bold;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 #services .service-container .service-text a {
   text-decoration: none;
@@ -448,6 +473,12 @@ body header .container .outer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  background-image: url(/assets/brickwall.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about-container h2 {
+  margin: 70px 0 0 0;
 }
 .about-container .established:hover {
   stroke-width: 2px;
@@ -457,4 +488,8 @@ body header .container .outer {
 .about-container p {
   margin: 50px;
   color: white;
+  margin-bottom: 0 0 0 70px;
+  font-family: Bold;
+  text-transform: uppercase;
+  font-size: 20px;
 }

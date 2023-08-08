@@ -1,8 +1,9 @@
 body {
 
     .navigation {
-        background-color: #cc8dcc;
-        border-bottom: .5px solid pink;
+        background-image: url(/assets/blurry-gradient-haikei2.png);
+        background-size: cover;
+        border-bottom: .5px solid white;
         padding: 20px 0;
         ul {
             display: flex;
@@ -28,7 +29,7 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: url(/assets/stacked-steps-haikei.png);
+            background-image: url(/assets/brickwall.jpg);
             background-size: cover;
             background-attachment: fixed;
         .container {
@@ -46,14 +47,20 @@ body {
                     margin: 0;
                     text-align: center;
                     color: white;
+                    font-family: Neon;
+                }
+
+                img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 h2 {
-                    font-family: 'Sacramento', cursive;
-                    font-size: 95px;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: pink;
-                    color: transparent;
+                    font-family: Titles;
+                    font-size: 198px;
+                    color: white;
+                    font-weight: lighter;
                 }
                 h3 {
                     margin: 0;
@@ -62,11 +69,10 @@ body {
                 a {
                     text-decoration: none;
                     padding: 5px 15px;
-                    background-color: #cc8dcc;
-                    color: white;    
+                    background-color: white;
+                    color: pink;    
                     border: 1px solid pink;  
-                    position: relative;    
-                    top: 140px;          
+                              
                 }
                 a:hover {
                     background-color: #d87093;
