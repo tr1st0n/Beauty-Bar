@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SBB</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="/assets/favi.png">    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,24 @@
     </style>
 </head>
 <body>
-    <div class="navigation">
+    <div class="hamburger">
+        <button class="ham" onclick="show()"> 
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+        <nav class="hamburger-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>function
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation" style="display: none;">
                 <nav>
                     <ul>
                         <li><a href="#services">Services</a></li>
@@ -76,7 +94,7 @@
                     <a class="menu" href="#">Our Menu</a>
                 </div>
                 <div class="service-image">
-                    <img src="./assets/placeholder5.jpg">
+                    <img src="./assets/service.png">
                 </div>
             </div>
         </section>
@@ -106,14 +124,13 @@
             <div class="location-container">
                 <div class="hours">
 
-                    <h2>Hours of Operation:</h2>
-                    <p>Monday - Closed</p>
-                    <p>Tuesday 10am - 7pm</p>
-                    <p>Wednesday 10am - 7pm</p>
-                    <p>Thursday 10am - 7pm</p>
-                    <p>Friday 10am - 7pm</p>
-                    <p>Saturday 10am - 7pm</p>
-                    <p>Sunday - Closed</p>
+                    <h2>Appointments:</h2>
+                    <p>Please message me to book an appointment</p>
+                    <p>My availability will be posted to my Instagram highlights as well as Calendy</p>
+                    <p>All clients must send a $20 non-refundable deposit in order to secure their spot</p>
+                    <p>The deposit goes towards the service. The remainder can be paid in cash or e-transfer</p>
+                    <p>Please note that e-transfer payments will be taxed</p>
+
                     <h2>36 Blue Jays Way</h2>
                     <p>Scarborough Based Nails & Lashes</p>
 

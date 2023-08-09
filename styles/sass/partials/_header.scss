@@ -1,9 +1,76 @@
 body {
 
+    .hamburger {
+        position: fixed;
+        right: -500px;
+        width: 350px;
+        height: 100%;
+        background-color: black;
+        transition: .5s;
+        ul li a {
+            color: white;
+            text-align: right;
+            text-transform: uppercase;
+            list-style-type: none;
+            list-style: none;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #252525;
+        }
+        .ham {
+            display: block;
+            top: 4%;
+            left: 110%;
+            position: fixed;
+            width: 31px;
+            height: 86px;
+            transform: translateX(-650%);
+            border: 0;
+            background: 0 0; 
+            .bar {
+                position: fixed;
+                background: white;
+                height: 4px;
+                width: 100%;
+                transition: all .3s ease-in;
+            }
+            #bar1 {
+                top: 3px;
+            }
+
+            #bar2 {
+                top: 11px;
+            }
+            #bar3 {
+                top: 19px;
+            }
+
+
+        }
+        .hamburger-nav {
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            width: 250px;
+        }
+    }
+
+    .hamburger.active {
+        right: 0;
+    }
+    .ham.open #bar1{
+       background-color: white;
+       transform: rotate(45deg) translate(6px, 5px);
+    }
+    .ham.open #bar2{
+        background-color: transparent;
+    }
+    .ham.open #bar3{
+        background-color: white;
+        transform: rotate(-45deg) translate(6px, -5px);
+    }
     .navigation {
-        background-image: url(/assets/blurry-gradient-haikei2.png);
-        background-size: cover;
-        border-bottom: .5px solid white;
+        background-color: white;
+        border-bottom: .5px solid pink;
         padding: 20px 0;
         ul {
             display: flex;
@@ -12,11 +79,12 @@ body {
             li {
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: pink;
+                    font-family: Bold;
                     
                 }
                 a:hover {
-                    color: pink;
+                    color: #d87093;
                     font-weight: bold;
                     
                 }
@@ -24,7 +92,7 @@ body {
         }
     }
         header {
-            height: 85vh;
+            height: 95vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -70,12 +138,13 @@ body {
                     text-decoration: none;
                     padding: 5px 15px;
                     background-color: white;
-                    color: pink;    
+                    color: black;    
                     border: 1px solid pink;  
                               
                 }
                 a:hover {
                     background-color: #d87093;
+                    color: pink;
                     text-transform: uppercase;
                 }
             }

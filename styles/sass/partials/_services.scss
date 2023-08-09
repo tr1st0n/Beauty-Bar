@@ -9,10 +9,11 @@
         justify-content: space-around;
         align-items: center;
         border: 1px solid black;
-        background-image: url(/assets/blurry-gradient-haikei2.png);
+        background-image: url(/assets/blurry-gradient-haikei5.png);
+        background-size: cover;
         border-right: none;
         padding: 30px 0; 
-        color: white;
+        color: black;
 
         .service-title:hover {
             stroke-width: 2px;
@@ -20,7 +21,7 @@
             -webkit-text-stroke-color: black;            
         }      
         p {
-            color: white;
+            color: black;
             text-align: center;
             margin: 0 60px;
             font-family: Bold;
@@ -32,8 +33,8 @@
             text-decoration: none;
             padding: 5px 15px;
             background-color: white;
-            color: pink;    
-            border: 1px solid white;  
+            color: black;    
+            border: 1px solid pink;  
             position: relative;    
                      
         }

@@ -28,6 +28,7 @@ p, li, button, label, a {
   font-family: "Maitree", serif;
   font-size: 20px;
   font-weight: bolder;
+  line-height: 40px;
 }
 
 @font-face {
@@ -38,7 +39,7 @@ p, li, button, label, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/assets/blurry-gradient-haikei2.png);
+  background-image: url(/assets/blurry-gradient-haikei5.png);
   background-attachment: fixed;
   background-size: cover;
   -ms-flex-pack: distribute;
@@ -65,7 +66,7 @@ p, li, button, label, a {
   -webkit-box-shadow: 5px 10px #000000;
           box-shadow: 5px 10px #000000;
   border: 1px solid black;
-  background-color: pink;
+  background-color: rgb(233, 233, 233);
   margin: 50px;
 }
 .contact-container .message {
@@ -86,7 +87,7 @@ p, li, button, label, a {
   -webkit-box-shadow: 5px 10px #000000;
           box-shadow: 5px 10px #000000;
   border: 1px solid black;
-  background-color: pink;
+  background-color: rgb(233, 233, 233);
   margin: 50px;
   padding: 50px 20px;
 }
@@ -154,7 +155,7 @@ p, li, button, label, a {
 }
 
 .copyright {
-  background-color: pink;
+  background-color: rgb(233, 233, 233);
   padding: 10px 0;
   border-top: 1px solid white;
 }
@@ -168,7 +169,7 @@ p, li, button, label, a {
   font-weight: bold;
   font-style: italic;
   font-size: 15px;
-  color: white;
+  color: black;
 }
 
 .gallery-container {
@@ -191,6 +192,7 @@ p, li, button, label, a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 70px 0;
+  color: white;
 }
 .gallery-container .gallery-title:hover {
   stroke-width: 2px;
@@ -242,7 +244,7 @@ p, li, button, label, a {
   text-decoration: none;
   padding: 5px 15px;
   background-color: white;
-  color: pink;
+  color: black;
   border: 1px solid pink;
   position: relative;
 }
@@ -251,10 +253,78 @@ p, li, button, label, a {
   text-transform: uppercase;
 }
 
+body .hamburger {
+  position: fixed;
+  right: -500px;
+  width: 350px;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .hamburger ul li a {
+  color: white;
+  text-align: right;
+  text-transform: uppercase;
+  list-style-type: none;
+  list-style: none;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #252525;
+}
+body .hamburger .ham {
+  display: block;
+  top: 4%;
+  left: 110%;
+  position: fixed;
+  width: 31px;
+  height: 86px;
+  -webkit-transform: translateX(-650%);
+          transform: translateX(-650%);
+  border: 0;
+  background: 0 0;
+}
+body .hamburger .ham .bar {
+  position: fixed;
+  background: white;
+  height: 4px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+body .hamburger .ham #bar1 {
+  top: 3px;
+}
+body .hamburger .ham #bar2 {
+  top: 11px;
+}
+body .hamburger .ham #bar3 {
+  top: 19px;
+}
+body .hamburger .hamburger-nav {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+}
+body .hamburger.active {
+  right: 0;
+}
+body .ham.open #bar1 {
+  background-color: white;
+  -webkit-transform: rotate(45deg) translate(6px, 5px);
+          transform: rotate(45deg) translate(6px, 5px);
+}
+body .ham.open #bar2 {
+  background-color: transparent;
+}
+body .ham.open #bar3 {
+  background-color: white;
+  -webkit-transform: rotate(-45deg) translate(6px, -5px);
+          transform: rotate(-45deg) translate(6px, -5px);
+}
 body .navigation {
-  background-image: url(/assets/blurry-gradient-haikei2.png);
-  background-size: cover;
-  border-bottom: 0.5px solid white;
+  background-color: white;
+  border-bottom: 0.5px solid pink;
   padding: 20px 0;
 }
 body .navigation ul {
@@ -266,14 +336,15 @@ body .navigation ul {
 }
 body .navigation ul li a {
   text-decoration: none;
-  color: white;
+  color: pink;
+  font-family: Bold;
 }
 body .navigation ul li a:hover {
-  color: pink;
+  color: #d87093;
   font-weight: bold;
 }
 body header {
-  height: 85vh;
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,11 +419,12 @@ body header .container .title a {
   text-decoration: none;
   padding: 5px 15px;
   background-color: white;
-  color: pink;
+  color: black;
   border: 1px solid pink;
 }
 body header .container .title a:hover {
   background-color: #d87093;
+  color: pink;
   text-transform: uppercase;
 }
 body header .container .outer {
@@ -378,16 +450,16 @@ body header .container .outer {
   text-align: center;
   width: 50%;
   border: 1px solid black;
-  background-image: url(/assets/blurry-gradient-haikei2.png);
+  background-image: url(/assets/blurry-gradient-haikei5.png);
   padding: 20px;
 }
 .location-container .hours h2 {
   margin: 10px 0;
-  color: white;
+  color: black;
 }
 .location-container .hours p {
   margin: 20px 0;
-  color: white;
+  color: black;
   font-family: Bold;
   text-transform: uppercase;
   font-size: 20px;
@@ -424,10 +496,11 @@ body header .container .outer {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
-  background-image: url(/assets/blurry-gradient-haikei2.png);
+  background-image: url(/assets/blurry-gradient-haikei5.png);
+  background-size: cover;
   border-right: none;
   padding: 30px 0;
-  color: white;
+  color: black;
 }
 #services .service-container .service-text .service-title:hover {
   stroke-width: 2px;
@@ -435,7 +508,7 @@ body header .container .outer {
   -webkit-text-stroke-color: black;
 }
 #services .service-container .service-text p {
-  color: white;
+  color: black;
   text-align: center;
   margin: 0 60px;
   font-family: Bold;
@@ -446,8 +519,8 @@ body header .container .outer {
   text-decoration: none;
   padding: 5px 15px;
   background-color: white;
-  color: pink;
-  border: 1px solid white;
+  color: black;
+  border: 1px solid pink;
   position: relative;
 }
 #services .service-container .service-text a:hover {
@@ -479,6 +552,7 @@ body header .container .outer {
 }
 .about-container h2 {
   margin: 70px 0 0 0;
+  color: white;
 }
 .about-container .established:hover {
   stroke-width: 2px;
