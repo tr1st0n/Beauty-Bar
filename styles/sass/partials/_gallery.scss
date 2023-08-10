@@ -8,7 +8,7 @@
         display: flex;
         justify-content: center;
         margin: 70px 0;
-        color: white;
+        color: black;
     }
     .gallery-title:hover {
         stroke-width: 2px;
@@ -48,10 +48,12 @@
             background-color: white;
             color: black;    
             border: 1px solid pink;  
-            position: relative;             
+            position: relative; 
+            text-shadow: none;            
             }
         a:hover {
             background-color: #d87093;
+            color: pink;
             text-transform: uppercase;
             }
         }

@@ -32,16 +32,20 @@ body {
                 height: 4px;
                 width: 100%;
                 transition: all .3s ease-in;
+                
             }
             #bar1 {
                 top: 3px;
+                border: 1px solid black;
             }
 
             #bar2 {
                 top: 11px;
+                border: 1px solid black;
             }
             #bar3 {
                 top: 19px;
+                border: 1px solid black;
             }
 
 
@@ -60,13 +64,16 @@ body {
     .ham.open #bar1{
        background-color: white;
        transform: rotate(45deg) translate(6px, 5px);
+       border: none;
     }
     .ham.open #bar2{
         background-color: transparent;
+        border: none;
     }
     .ham.open #bar3{
         background-color: white;
         transform: rotate(-45deg) translate(6px, -5px);
+        border: none;
     }
     .navigation {
         background-color: white;
@@ -92,7 +99,7 @@ body {
         }
     }
         header {
-            height: 95vh;
+            height: 98vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -116,6 +123,8 @@ body {
                     text-align: center;
                     color: white;
                     font-family: Neon;
+                    text-shadow: 2px 2px 5px white;
+                    font-size: 35px;
                 }
 
                 img {
@@ -139,13 +148,14 @@ body {
                     padding: 5px 15px;
                     background-color: white;
                     color: black;    
-                    border: 1px solid pink;  
+                    border: 1px solid #d87093;  
                               
                 }
                 a:hover {
                     background-color: #d87093;
                     color: pink;
                     text-transform: uppercase;
+                    text-shadow: none;
                 }
             }
 

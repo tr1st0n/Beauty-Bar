@@ -29,6 +29,7 @@ p, li, button, label, a {
   font-size: 20px;
   font-weight: bolder;
   line-height: 40px;
+  text-shadow: 2px 2px 5px white;
 }
 
 @font-face {
@@ -39,8 +40,7 @@ p, li, button, label, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/assets/blurry-gradient-haikei5.png);
-  background-attachment: fixed;
+  background-image: url(/assets/blurry-gradient-haikei7.png);
   background-size: cover;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -131,7 +131,7 @@ p, li, button, label, a {
 .contact-container .message form .message-box label {
   padding: 0 10px;
   margin-top: 20px;
-  color: white;
+  color: black;
 }
 .contact-container .message form .message-box textarea {
   display: -webkit-box;
@@ -143,6 +143,7 @@ p, li, button, label, a {
   width: 100%;
   height: 200px;
   padding: 0px 0px;
+  font-family: "Maitree", serif;
 }
 .contact-container .message form .message-box button {
   width: 100%;
@@ -168,7 +169,7 @@ p, li, button, label, a {
           justify-content: center;
   font-weight: bold;
   font-style: italic;
-  font-size: 15px;
+  font-size: 17px;
   color: black;
 }
 
@@ -192,7 +193,7 @@ p, li, button, label, a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 70px 0;
-  color: white;
+  color: black;
 }
 .gallery-container .gallery-title:hover {
   stroke-width: 2px;
@@ -247,9 +248,11 @@ p, li, button, label, a {
   color: black;
   border: 1px solid pink;
   position: relative;
+  text-shadow: none;
 }
 .gallery-container .gallery-links a:hover {
   background-color: #d87093;
+  color: pink;
   text-transform: uppercase;
 }
 
@@ -293,12 +296,15 @@ body .hamburger .ham .bar {
 }
 body .hamburger .ham #bar1 {
   top: 3px;
+  border: 1px solid black;
 }
 body .hamburger .ham #bar2 {
   top: 11px;
+  border: 1px solid black;
 }
 body .hamburger .ham #bar3 {
   top: 19px;
+  border: 1px solid black;
 }
 body .hamburger .hamburger-nav {
   position: absolute;
@@ -313,14 +319,17 @@ body .ham.open #bar1 {
   background-color: white;
   -webkit-transform: rotate(45deg) translate(6px, 5px);
           transform: rotate(45deg) translate(6px, 5px);
+  border: none;
 }
 body .ham.open #bar2 {
   background-color: transparent;
+  border: none;
 }
 body .ham.open #bar3 {
   background-color: white;
   -webkit-transform: rotate(-45deg) translate(6px, -5px);
           transform: rotate(-45deg) translate(6px, -5px);
+  border: none;
 }
 body .navigation {
   background-color: white;
@@ -344,7 +353,7 @@ body .navigation ul li a:hover {
   font-weight: bold;
 }
 body header {
-  height: 95vh;
+  height: 98vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,6 +402,8 @@ body header .container .title h1 {
   text-align: center;
   color: white;
   font-family: Neon;
+  text-shadow: 2px 2px 5px white;
+  font-size: 35px;
 }
 body header .container .title img {
   display: -webkit-box;
@@ -420,12 +431,13 @@ body header .container .title a {
   padding: 5px 15px;
   background-color: white;
   color: black;
-  border: 1px solid pink;
+  border: 1px solid #d87093;
 }
 body header .container .title a:hover {
   background-color: #d87093;
   color: pink;
   text-transform: uppercase;
+  text-shadow: none;
 }
 body header .container .outer {
   position: absolute;
@@ -450,12 +462,13 @@ body header .container .outer {
   text-align: center;
   width: 50%;
   border: 1px solid black;
-  background-image: url(/assets/blurry-gradient-haikei5.png);
+  background-image: url(/assets/blurry-gradient-haikei6.png);
   padding: 20px;
 }
 .location-container .hours h2 {
   margin: 10px 0;
   color: black;
+  text-shadow: 2px 2px 5px white;
 }
 .location-container .hours p {
   margin: 20px 0;
@@ -463,6 +476,8 @@ body header .container .outer {
   font-family: Bold;
   text-transform: uppercase;
   font-size: 20px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
 }
 .location-container .map {
   -webkit-box-ordinal-group: 2;
@@ -514,6 +529,8 @@ body header .container .outer {
   font-family: Bold;
   text-transform: uppercase;
   font-size: 20px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
 }
 #services .service-container .service-text a {
   text-decoration: none;
@@ -526,6 +543,8 @@ body header .container .outer {
 #services .service-container .service-text a:hover {
   background-color: #d87093;
   text-transform: uppercase;
+  color: pink;
+  text-shadow: none;
 }
 #services .service-container .service-image {
   width: 50%;
@@ -552,7 +571,7 @@ body header .container .outer {
 }
 .about-container h2 {
   margin: 70px 0 0 0;
-  color: white;
+  color: black;
 }
 .about-container .established:hover {
   stroke-width: 2px;
@@ -566,4 +585,6 @@ body header .container .outer {
   font-family: Bold;
   text-transform: uppercase;
   font-size: 20px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
 }
