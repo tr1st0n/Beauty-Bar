@@ -195,6 +195,9 @@ p, li, button, label, a {
   margin: 70px 0;
   color: black;
 }
+.gallery-container .gallery-title h2 {
+  font-size: 38px;
+}
 .gallery-container .gallery-title:hover {
   stroke-width: 2px;
   color: pink;
@@ -570,8 +573,9 @@ body header .container .outer {
   background-attachment: fixed;
 }
 .about-container h2 {
-  margin: 70px 0 0 0;
+  margin: 70px 0 40px 0;
   color: black;
+  font-size: 38px;
 }
 .about-container .established:hover {
   stroke-width: 2px;
@@ -587,4 +591,8 @@ body header .container .outer {
   font-size: 20px;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
+  margin-top: 0;
+}
+.about-container .about-me h3 {
+  color: white;
 }
