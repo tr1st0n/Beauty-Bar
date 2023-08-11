@@ -595,4 +595,5 @@ body header .container .outer {
 }
 .about-container .about-me h3 {
   color: white;
+  text-shadow: 2px 2px 5px white;
 }
