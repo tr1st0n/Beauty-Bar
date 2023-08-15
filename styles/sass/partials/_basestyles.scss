@@ -36,6 +36,11 @@ p, li, button, label, a {
     text-shadow: 2px 2px 5px white;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 @font-face {
     font-family: Neon;
     src: url(NeonSans.otf);

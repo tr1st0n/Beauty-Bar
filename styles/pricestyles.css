@@ -1,0 +1,139 @@
+/* Fonts */
+@font-face {
+    font-family: Neon;
+    src: url(NeonSans.otf);
+}
+
+/* Base Styles*/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    font-family: Neon;
+    font-size: 30px;
+}
+
+p, li, button, label, a {
+    font-family: 'Maitree', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 40px;
+    text-shadow: 2px 2px 5px white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: Neon;
+    src: url(NeonSans.otf);
+}
+
+/* Navigation */ 
+.navigation {
+    background-color: black;
+    padding: 10px;
+}
+
+ul li a {
+    color: white;
+    padding: 30px;
+    text-shadow: none;
+}
+
+/* Header */ 
+
+header {
+    background-image: url(/assets/brickwall.jpg);
+    background-size: cover;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+h1 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+/* Main */ 
+
+.prices-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/blurry-gradient-haikei5.png);
+    background-size: cover;
+}
+
+.titles {
+    display: flex;
+    justify-content: space-around;
+    
+}
+/* Text Styling */ 
+h2 {
+    padding-bottom: 50px ;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+.prices {
+    display: flex;
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+.nail-container, .lash-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.nails, .lashes, .gel-nails, .lash-add-ons, .nail-add-ons, .crystals, .charms, .other {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+}
+
+.nail-price, .lash-price {
+    display: flex;
+    justify-content: space-around;
+}
+
