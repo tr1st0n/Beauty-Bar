@@ -128,7 +128,7 @@ p {
 .nails, .lashes, .gel-nails, .lash-add-ons, .nail-add-ons, .crystals, .charms, .other {
     border: 1px solid black;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(233, 233, 233);
     margin: 10px;
 }
 
