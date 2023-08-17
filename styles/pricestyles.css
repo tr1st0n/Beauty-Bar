@@ -68,7 +68,7 @@ a:hover {
 header {
     background-image: url(/assets/brickwall.jpg);
     background-size: cover;
-    height: 98vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
 }
@@ -120,6 +120,7 @@ p {
 
 .prices {
     display: flex;
+    padding: 0 100px;
 }
 .boxes {
     display: flex;
@@ -146,3 +147,8 @@ p {
     justify-content: space-around;
 }
 
+img {
+    width: 97%;
+    margin: 10px;
+    border: 1px solid black;
+}
