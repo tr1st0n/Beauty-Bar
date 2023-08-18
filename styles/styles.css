@@ -629,3 +629,68 @@ body header .container .outer {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
+@media (max-width: 810px) {
+  body header {
+    height: 70vh;
+  }
+  #services .service-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #services .service-container .service-text {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #services .service-container .service-image {
+    width: 100%;
+  }
+  #services .service-container .service-image img {
+    height: 50vh;
+  }
+  #location .location-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #location .location-container .hours {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0;
+  }
+  #location .location-container .map {
+    width: 100%;
+    height: 50vh;
+  }
+  #about .about-container .about-me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .about-container .about-me .policies {
+    width: 100%;
+  }
+  #contact .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact .contact-container .socials {
+    width: 80%;
+  }
+  #contact .contact-container .message {
+    width: 80%;
+  }
+}
