@@ -203,5 +203,10 @@ img {
 
     .lash-container {
         margin-top: 20px;
+        order: 1;
+    }
+    .nail-container {
+        order: 2;
+        margin-top: 20px;
     }
 }
