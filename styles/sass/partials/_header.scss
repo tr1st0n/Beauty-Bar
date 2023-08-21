@@ -60,6 +60,7 @@ body {
 
     .hamburger.active {
         right: 0;
+        z-index: 100;
     }
     .ham.open #bar1{
        background-color: white;

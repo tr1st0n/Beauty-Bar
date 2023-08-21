@@ -180,7 +180,12 @@ main {
   font-weight: bold;
   font-style: italic;
   font-size: 17px;
+  font-family: Bold;
   color: black;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  text-align: center;
 }
 
 .gallery-container {
@@ -327,6 +332,7 @@ body .hamburger .hamburger-nav {
 }
 body .hamburger.active {
   right: 0;
+  z-index: 100;
 }
 body .ham.open #bar1 {
   background-color: white;
@@ -476,6 +482,7 @@ body header .container .outer {
   width: 50%;
   border: 1px solid black;
   background-image: url(/assets/blurry-gradient-haikei6.png);
+  background-size: cover;
   padding: 20px;
 }
 .location-container .hours h2 {
@@ -648,9 +655,12 @@ body header .container .outer {
   }
   #services .service-container .service-image {
     width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   #services .service-container .service-image img {
-    height: 50vh;
+    height: 62vh;
   }
   #location .location-container {
     -webkit-box-orient: vertical;
@@ -664,6 +674,12 @@ body header .container .outer {
         -ms-flex-order: 1;
             order: 1;
     padding: 0;
+  }
+  #location .location-container .hours h2 {
+    margin-top: 48px;
+  }
+  #location .location-container .hours p {
+    padding: 0 35px;
   }
   #location .location-container .map {
     width: 100%;
@@ -692,5 +708,66 @@ body header .container .outer {
   }
   #contact .contact-container .message {
     width: 80%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 414px) {
+  body .hamburger .ham {
+    left: 134%;
+  }
+  body header .container .title h1 {
+    width: 83%;
+  }
+  body header .container .title h2 {
+    font-size: 160px;
+  }
+  #services .service-container .service-text p {
+    font-size: 20px;
+    margin: 15px;
+  }
+  #services .service-container .service-image img {
+    height: 45vh;
+  }
+  #gallery .gallery-container .gallery-title {
+    margin: 40px 0;
+  }
+  #gallery .gallery-container .gallery {
+    padding: 0;
+  }
+  #gallery .gallery-container .gallery ul li {
+    width: 50%;
+  }
+  #gallery .gallery-container .gallery-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0 20px;
+  }
+  #gallery .gallery-container .gallery-links a {
+    margin-bottom: 5px;
+  }
+  #location .location-container .hours h2 {
+    margin: 40px 0;
+  }
+  #location .location-container .hours p {
+    font-size: 20px;
+  }
+  #about .about-container .established h2 {
+    margin: 40px 0;
+  }
+  #about .about-container .about-me .policies p {
+    margin: 20px;
+  }
+  #contact .contact-container .message {
+    padding: 20px 10px;
+  }
+  #contact .contact-container .message form .message-box .txt-box {
+    height: 100px;
+  }
+  #contact .contact-container .message form .message-box button {
+    text-align: center;
   }
 }

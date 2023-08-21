@@ -49,7 +49,7 @@ main {
 /* Navigation */ 
 .navigation {
     background-color: palevioletred;
-    padding: 10px;
+    
 }
 
 ul li a {
@@ -57,6 +57,7 @@ ul li a {
     padding: 30px;
     text-shadow: none;
     text-transform: uppercase;
+    font-family: Neon;
 }
 
 a:hover {
@@ -117,7 +118,7 @@ p {
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px;
 }
-
+/* Price Styling */
 .prices {
     display: flex;
     padding: 0 100px;
@@ -151,4 +152,56 @@ img {
     width: 97%;
     margin: 10px;
     border: 1px solid black;
+}
+
+.copyright {
+    background-color: rgb(233, 233, 233);
+    padding: 10px 0;
+    border-top: 1px solid white;
+}
+
+.copyright p {
+    
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 17px;
+        color: black;
+        text-align: center;
+    
+}
+
+@media (max-width: 810px) {
+    header {
+        height: 60vh;
+    }
+   .prices {
+        padding: 0 50px;
+   }
+   img {
+    width: 94%;
+   }
+}
+
+@media (max-width: 414px) {
+    
+    header {
+        text-align: center;
+        height: 50vh;
+    }
+    h1 {
+        font-size: 124px;
+    }
+    .prices {
+        flex-direction: column;
+    }
+
+    .nail-container, .lash-container {
+        width: 100%;
+    }
+
+    .lash-container {
+        margin-top: 20px;
+    }
 }

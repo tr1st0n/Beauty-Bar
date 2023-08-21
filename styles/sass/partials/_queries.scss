@@ -13,8 +13,9 @@
             }
             .service-image {
                 width: 100%;
+                order: 2;
                 img {
-                    height: 50vh;
+                    height: 62vh;
                 }
             }
         }
@@ -27,6 +28,13 @@
                 width: 100%;
                 order: 1;
                 padding: 0;
+                h2 {
+                    margin-top: 48px;
+                }
+                p {
+                    padding: 0 35px;
+                }
+
             }
             .map {
                 width: 100%;
@@ -54,6 +62,115 @@
             }
             .message {
                 width: 80%;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    body {
+        .hamburger {
+            .ham {
+                left: 134%;
+            }
+        }
+        header {
+            .container {
+                .title {
+                    h1 {
+                        width: 83%;
+                    }
+                    h2 {
+                        font-size: 160px;
+                    }
+                }
+            }
+        }
+    }
+    #services {
+        .service-container {
+            .service-text {
+                p {
+                    font-size: 20px;
+                    margin: 15px;
+                }
+            }
+            .service-image {
+                img {
+                    height: 45vh;
+                }
+            }
+        }
+        
+    }
+    #gallery {
+        .gallery-container {
+            .gallery-title {
+                margin: 40px 0;
+            }
+            .gallery {
+                padding: 0;
+                ul {
+                    li {
+                        width: 50%;
+                    }
+                }
+            }
+            .gallery-links {
+                flex-direction: column;
+                text-align: center;
+                margin: 0 0 30px 0;
+                padding: 0 20px;
+                a {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    #location {
+        .location-container {
+            .hours {
+                h2 {
+                    margin: 40px 0;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #about {
+        .about-container {
+            .established {
+                h2 {
+                    margin: 40px 0;
+                }
+            }
+            .about-me {
+                .policies {
+                    p {
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+    #contact {
+        .contact-container {
+
+            .message {
+                padding: 20px 10px;
+                form {                    
+                    .message-box {
+                        .txt-box {
+                            height: 100px;
+                        }
+                        button {
+                            text-align: center;
+                            }    
+                    }
+                }
             }
         }
     }
