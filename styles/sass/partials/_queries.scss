@@ -67,7 +67,7 @@
         }
     }
 }
-
+/*MOBILE VERSION*/
 @media (max-width: 414px) {
     body {
         .hamburger {
@@ -76,10 +76,13 @@
             }
         }
         header {
+
             .container {
                 .title {
                     h1 {
                         width: 83%;
+                        text-shadow: none;
+                        font-size: 45px;
                     }
                     h2 {
                         font-size: 160px;
@@ -91,6 +94,9 @@
     #services {
         .service-container {
             .service-text {
+                h2 {
+                    font-size: 45px;
+                }
                 p {
                     font-size: 20px;
                     margin: 15px;
@@ -108,6 +114,9 @@
         .gallery-container {
             .gallery-title {
                 margin: 40px 0;
+                h2 {
+                    font-size: 60px;
+                }
             }
             .gallery {
                 padding: 0;
@@ -133,6 +142,7 @@
             .hours {
                 h2 {
                     margin: 40px 0;
+                    font-size: 41px;
                 }
                 p {
                     font-size: 20px;
@@ -142,13 +152,19 @@
     }
     #about {
         .about-container {
+            background-size: contain;
             .established {
                 h2 {
                     margin: 40px 0;
+                    font-size: 60px;
                 }
             }
             .about-me {
                 .policies {
+                    h3 {
+                        text-shadow: none;
+                        font-size: 34px;
+                    }
                     p {
                         margin: 20px;
                     }
@@ -158,9 +174,16 @@
     }
     #contact {
         .contact-container {
-
+            .socials {
+                h2 {
+                    font-size: 35px;
+                }
+            }
             .message {
                 padding: 20px 10px;
+                h2 {
+                    font-size: 40px;
+                }
                 form {                    
                     .message-box {
                         .txt-box {

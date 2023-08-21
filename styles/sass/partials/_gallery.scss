@@ -1,9 +1,8 @@
 .gallery-container {
     display: flex;
     flex-direction: column;
-    background-image: url(/assets/brickwall.jpg);
+    background: url(/assets/brickwall.jpg) repeat center;
     background-size: cover;
-    background-attachment: fixed;
     .gallery-title {
         display: flex;
         justify-content: center;

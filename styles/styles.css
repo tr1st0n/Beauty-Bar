@@ -166,7 +166,7 @@ main {
 }
 
 .copyright {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(0, 0, 0);
   padding: 10px 0;
   border-top: 1px solid white;
 }
@@ -196,9 +196,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(/assets/brickwall.jpg);
+  background: url(/assets/brickwall.jpg) repeat center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .gallery-container .gallery-title {
   display: -webkit-box;
@@ -386,9 +385,8 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/assets/brickwall.jpg);
+  background: url(/assets/brickwall.jpg) no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
 }
 body header .container {
   display: -webkit-box;
@@ -585,9 +583,8 @@ body header .container .outer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  background-image: url(/assets/brickwall.jpg);
+  background: url(/assets/brickwall.jpg) repeat center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .about-container h2 {
   margin: 70px 0 40px 0;
@@ -711,15 +708,21 @@ body header .container .outer {
     margin-top: 0;
   }
 }
+/*MOBILE VERSION*/
 @media (max-width: 414px) {
   body .hamburger .ham {
     left: 134%;
   }
   body header .container .title h1 {
     width: 83%;
+    text-shadow: none;
+    font-size: 45px;
   }
   body header .container .title h2 {
     font-size: 160px;
+  }
+  #services .service-container .service-text h2 {
+    font-size: 45px;
   }
   #services .service-container .service-text p {
     font-size: 20px;
@@ -730,6 +733,9 @@ body header .container .outer {
   }
   #gallery .gallery-container .gallery-title {
     margin: 40px 0;
+  }
+  #gallery .gallery-container .gallery-title h2 {
+    font-size: 60px;
   }
   #gallery .gallery-container .gallery {
     padding: 0;
@@ -751,18 +757,33 @@ body header .container .outer {
   }
   #location .location-container .hours h2 {
     margin: 40px 0;
+    font-size: 41px;
   }
   #location .location-container .hours p {
     font-size: 20px;
   }
+  #about .about-container {
+    background-size: contain;
+  }
   #about .about-container .established h2 {
     margin: 40px 0;
+    font-size: 60px;
+  }
+  #about .about-container .about-me .policies h3 {
+    text-shadow: none;
+    font-size: 34px;
   }
   #about .about-container .about-me .policies p {
     margin: 20px;
   }
+  #contact .contact-container .socials h2 {
+    font-size: 35px;
+  }
   #contact .contact-container .message {
     padding: 20px 10px;
+  }
+  #contact .contact-container .message h2 {
+    font-size: 40px;
   }
   #contact .contact-container .message form .message-box .txt-box {
     height: 100px;
