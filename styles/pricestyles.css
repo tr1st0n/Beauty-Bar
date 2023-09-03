@@ -140,7 +140,7 @@ p {
     border: 1px solid black;
     padding: 20px;
     background-color: rgb(233, 233, 233);
-    margin: 10px;
+    margin: 5px;
 }
 
 .nail-price, .lash-price {
@@ -208,5 +208,13 @@ img {
     .nail-container {
         order: 2;
         margin-top: 20px;
+    }
+
+    .lashes, .lash-add-ons {
+        padding: 5px;
+    }
+
+    .nail-add-ons {
+        margin: 5px 0;
     }
 }
